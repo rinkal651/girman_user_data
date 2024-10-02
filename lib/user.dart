@@ -6,10 +6,7 @@ class User {
   User(this.first_name, this.last_name, this.city, this.contact_number);
 
   factory User.fromJson(Map<String, dynamic> json) {
-    return User(json['first_name'],
-    json['last_name'],
-     json['city'],
-      json['contact_number']
-    );
+    return User(json['first_name'], json['last_name'], json['city'],
+        json['contact_number']);
   }
 }

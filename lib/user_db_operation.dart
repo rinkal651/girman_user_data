@@ -10,14 +10,19 @@ class UserDbOperation {
   static const LAST_NAME = "last_name";
   static const CITY = "city";
   static const CONTACT_NUMBER = "contact_number";
-  void addUser(
-      {required String city, required String contact_number, required String first_name, required String last_name}) {
-    FirebaseFirestore.instance.collection(DB_NAME).add({
-      UserDbOperation.FIRST_NAME: first_name,
-      UserDbOperation.LAST_NAME: last_name,
-      UserDbOperation.CITY: city,
-      UserDbOperation.CONTACT_NUMBER: contact_number,
-    }).then((value) => print("User Added"))
+  void addUser({required String city,
+      required String contact_number,
+      required String first_name,
+      required String last_name}) {
+    FirebaseFirestore.instance
+        .collection(DB_NAME)
+        .add({
+          UserDbOperation.FIRST_NAME: first_name,
+          UserDbOperation.LAST_NAME: last_name,
+          UserDbOperation.CITY: city,
+          UserDbOperation.CONTACT_NUMBER: contact_number,
+        })
+        .then((value) => print("User Added"))
         .catchError((error) => print("Failed to add user: $error"));
   }
 
@@ -25,7 +30,7 @@ class UserDbOperation {
     List<User> userList = [];
     QuerySnapshot user = await FirebaseFirestore.instance.collection(DB_NAME).get();
     final allData = user.docs.map((doc) => doc.data() as Map<String, dynamic>).toList();
-    for(int counter =0; counter<allData.length; counter++) {
+    for (int counter = 0; counter < allData.length; counter++) {
       userList.add(User.fromJson(allData[counter]));
     }
     return userList;

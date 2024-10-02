@@ -22,9 +22,8 @@ class UserListViewModel extends ChangeNotifier {
     if (query.isEmpty) {
       filteredUsersList = usersList; // Return all users if query is empty
     } else {
-      filteredUsersList = usersList
-          .where((e) => e.first_name.toLowerCase().contains(query.toLowerCase()))
-          .toList();
+      filteredUsersList = usersList.where(
+              (e) => e.first_name.toLowerCase().contains(query.toLowerCase())).toList();
     }
     notifyListeners();
   }
