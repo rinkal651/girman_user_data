@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "70017425214",
+    "project_id": "girman-user-data",
+    "storage_bucket": "girman-user-data.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70017425214:android:78bf5f217b5db1ef1f166f",
+        "android_client_info": {
+          "package_name": "com.example.girman_user_data"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcFpqz7gGnCgd9XgC2YNl6m16gmfLlCgQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70017425214:android:23de1f6b43b07ba11f166f",
+        "android_client_info": {
+          "package_name": "com.girmanuserdata.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcFpqz7gGnCgd9XgC2YNl6m16gmfLlCgQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -38,6 +38,9 @@ dependencies:
   provider: ^6.1.2
   url_launcher: ^6.3.0
   flutter_svg: ^2.0.10+1
+  webview_flutter: ^4.8.0
+  firebase_core: ^3.6.0
+  cloud_firestore: ^5.4.3
 
 dev_dependencies:
   flutter_test:
@@ -59,7 +62,7 @@ flutter:
   assets:
     - assets/images/logo.svg
     - assets/images/
-
+    - assets/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
